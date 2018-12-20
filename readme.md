@@ -1,5 +1,10 @@
 # Bootstrap4 form remaining count
 
+## 開発環境
+* Bootstrap 4.1.3
+* jQuery 3.3.1
+
+
 ## Setup
 bootstrapのインストール
 ```npm install```
