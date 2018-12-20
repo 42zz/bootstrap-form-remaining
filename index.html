@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bootstrap-form-remaining</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <header id="header">Header here</header>
+  <main id="contact">
+    <div id="nokori" class="fixed-box">
+      <div class="title">残り入力項目数</div>
+      <div class="number"><span id="form_nokori"></span>/<span id="form_total">8</span></div>
+    </div>
+    <div class="container">
+      <h1 class="main-title">お問い合わせ</h1>
+
+      <div class="sub-message-block">
+        <p class="message">
+          下記項目にご入力ください。<br>
+          <span class="required">必須</span>は必須項目になりますので必ずご入力ください。
+        </p>
+      </div><!-- .sub-message-block -->
+
+      <h3 class="sub-heading">お客様情報</h3>
+      <form id="contactform" class="needs-validation was-validated">
+      <div class="form-group row">
+        <label for="your_name" class="col-sm-12 col-md-3 col-form-label">お名前<span class="required">必須</span></label>
+        <div class="col-sm-12 col-md-9">
+          <input type="text" id="your_name" name="your_name" class="form-control is-required" placeholder="お名前をご入力ください" required>
+        </div>
+      </div><!-- .form-group -->
+      <div class="form-group row">
+        <label for="your_kana" class="col-sm-12 col-md-3 col-form-label">ふりがな<span class="required">必須</span></label>
+        <div class="col-sm-12 col-md-9">
+          <input type="text" id="your_kana" name="your_kana" class="form-control is-required" placeholder="ふりがなをご入力ください" required>
+        </div>
+      </div><!-- .form-group -->
+      <div class="form-group row">
+        <label for="company_name" class="col-sm-12 col-md-3 col-form-label">法人名<span class="option">任意</span></label>
+        <div class="col-sm-12 col-md-9">
+          <input type="text" id="company_name" name="company_name" class="form-control" placeholder="法人名をご入力ください">
+        </div>
+      </div><!-- .form-group -->
+      <div class="form-group row">
+        <label for="your_email" class="col-sm-12 col-md-3 col-form-label">E-mail<span class="required">必須</span></label>
+        <div class="col-sm-12 col-md-9">
+          <input type="email" id="your_email" name="your_email" class="form-control is-required" placeholder="メールアドレスをご入力ください" required>
+        </div>
+      </div><!-- .form-group -->
+      <div class="form-group row">
+        <label for="your_phone" class="col-sm-12 col-md-3 col-form-label">電話番号<span class="required">必須</span></label>
+        <div class="col-sm-12 col-md-9">
+          <input type="text" id="your_phone" name="your_phone" class="form-control is-required" placeholder="電話番号をご入力ください" required>
+        </div>
+      </div><!-- .form-group -->
+      <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+    </div>
+  </main>
+  <footer id="footer">Footer here</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
